@@ -2,6 +2,7 @@ const path = require('path');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
@@ -65,6 +66,9 @@ module.exports = {
     },
     plugins: [
         new Dotenv(),
+        new CopyWebpackPlugin([
+            { from: './public/favicon.ico' }
+        ]),
         new HtmlWebpackPlugin({
             template: './public/index.html',
             filename: 'index.html',

@@ -3,6 +3,7 @@ const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     devtool: 'cheap-module-source-map',
@@ -62,6 +63,9 @@ module.exports = {
     },
     plugins: [
         new Dotenv(),
+        new CopyWebpackPlugin([
+            { from: __dirname + '/public/favicon.ico' }
+        ]),
         new HtmlWebpackPlugin({
             template: __dirname + '/public/index.html',
             filename: 'index.html',
