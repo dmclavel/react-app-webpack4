@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
+import { NavLink, Route } from 'react-router-dom';
 
-import { Link, Route } from 'react-router-dom';
-import Users from './containers/Users';
+import classes from './App.css';
+import ReactPage from './containers/Home/ReactPage';
 import asyncComponent from './hoc/asyncComponent';
 
-const Pizza = asyncComponent(() => import('./containers/Pizza'));
+//Sample lazy loading setup
+const Programmer = asyncComponent(() => import('./containers/Programmer/Programmer'));
 
 class App extends Component {
     render () {
         return (
-            <div>
+            <div className={classes.App}>
+                <nav>
+                    <NavLink to="/" exact activeClassName={classes.Active}> Home Page </NavLink>
+                    <NavLink to="/programmer" activeClassName={classes.Active}> Programmer Page </NavLink>
+                </nav>
                 <div>
-                    <Link to="/"> Users </Link>
-                    <Link to="/pizza"> Pizza </Link>
-                </div>
-                <div>
-                    <Route path="/" exact component={Users} />
-                    <Route path="/pizza" component={Pizza} />
+                    <Route path="/" exact component={ReactPage} />
+                    <Route path="/programmer" component={Programmer} />
                 </div>
             </div>
         );

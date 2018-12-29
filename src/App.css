@@ -1,0 +1,26 @@
+.App {
+    height: 100%;
+}
+
+.App nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(43, 40, 40);
+    height: 60px;
+}
+
+.App nav a {
+    text-decoration: none;
+    margin: 0 12px; 
+    color: #fff;
+}
+
+.App nav a:hover {
+    color: rgb(158, 99, 31);
+}
+
+.App nav .Active {
+    color: rgb(158, 99, 31);
+    border-bottom: 2px solid rgb(158, 99, 31);
+}

@@ -1,0 +1,15 @@
+.ReactPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.InlineImages {
+    display: inline-flex;
+    margin: 30px;
+}
+
+.ReactPage section {
+    margin: 20px 0;
+}
