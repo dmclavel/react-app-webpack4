@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "dev": "cross-env webpack-dev-server --mode=development",
     "start": "serve -s dist",
     "prebuild": "rimraf dist",
