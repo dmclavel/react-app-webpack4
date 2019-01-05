@@ -24,28 +24,3 @@ Some Important Notes:
   If you will be deploying your application on Heroku, all you need to do is build the application and add the dist folder and   push it to your branch. Since it is initially included in the .gitignore, you need to run "git add -f dist" to disregard the   ignore config. Also, since the "start" script is set at "serve -s dist", once you deploy it on Heroku, the application will     automatically run on the link which will be given to you by Heroku.
 
   Take note, however, that Heroku is a Platform as a Service (PaaS) so everything seems spoon fed to you. When deploying your     application to Infrastracture as a Service (IaaS) platforms like Digital Ocean, you will need to do much more work. Please     refer to this https://www.digitalocean.com/community/tags/deployment?type=tutorials if you want to learn more about deploying   on IaaS platform like Digital Ocean.
-  
-_____________________________________________________________________________________________________________________________
-  
-  
-The MIT License
-
-Copyright (c) 2018-2019 Daimler Martillana Clavel
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
