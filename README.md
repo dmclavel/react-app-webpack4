@@ -1,6 +1,8 @@
 # react-app-webpack4
 A React App Boilerplate using Webpack 4 and Babel 7
 
+git clone https://github.com/dmclavel/react-app-webpack4
+
 Features Already Included:
 
   1. Dynamic Imports for Lazy Loading
