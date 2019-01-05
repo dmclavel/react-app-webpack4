@@ -1,7 +1,9 @@
 # react-app-webpack4
 A React App Boilerplate using Webpack 4 and Babel 7
 
-git clone https://github.com/dmclavel/react-app-webpack4
+How to download the project:
+  1. In the terminal, type 'git clone https://github.com/dmclavel/react-app-webpack4'; or
+  2. Under releases, download the zipped folder of the project's latest release
 
 Features Already Included:
 
