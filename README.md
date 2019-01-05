@@ -8,7 +8,7 @@ How to download the project:
 Features Already Included:
 
   1. Dynamic Imports for Lazy Loading
-  2. CSS Modules enabled to prevent unnecessary importing from other components
+  2. CSS Modules enabled to implement style scoping
   3. Configured Jest and Enzyme to perform testing in the application (DO NOT REMOVE 'setupTests.js' IN THE '/src' FOLDER)
   3. Serving images using url-loader
   4. Use of environment variables through process.env
